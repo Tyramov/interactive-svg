@@ -1,0 +1,27 @@
+.face {
+  fill: #673200;
+}
+
+.left-eye, .right-eye {
+  fill: #000;
+}
+
+.cls-1 {
+  fill: #673200;
+}
+
+.cls-2, .nose {
+  fill: #ffaaca;
+}
+
+.cls-3 {
+  fill: #c65b00;
+}
+
+.cls-4 {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px
+}
