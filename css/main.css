@@ -4,10 +4,7 @@
 
 .left-eye, .right-eye {
   fill: #000;
-}
-
-.left-eye, .right-eye {
-  animation: wiggle 4s linear infinite;
+  animation: wiggle 2s linear infinite;
 }
 
 .cls-1 {
@@ -30,22 +27,30 @@
   stroke-width: 3px;
 }
 
-.bear #left-ear #right-ear  {
+.bear #left-ear {
   transition: all 1s linear;
 }
 
-.bear:hover #left-ear #right-ear  {
+.bear #right-ear {
+  transition: all 1s linear;
+}
+
+.bear:hover #left-ear {
+  transform: translateY(-10px);
+}
+
+.bear:hover #right-ear {
   transform: translateY(-10px);
 }
 
 @keyframes wiggle {
 
   0% {
-    transform: translateX(4em);
+    transform: translateX(1em);
   }
 
   100% {
-    transform: translateX(-4em);
+    transform: translateX(-1em);
   }
 
 }
