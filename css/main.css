@@ -6,6 +6,10 @@
   fill: #000;
 }
 
+.left-eye, .right-eye {
+  animation: wiggle 4s linear infinite;
+}
+
 .cls-1 {
   fill: #673200;
 }
@@ -23,5 +27,25 @@
   stroke: #000;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 3px
+  stroke-width: 3px;
+}
+
+.bear #left-ear #right-ear  {
+  transition: all 1s linear;
+}
+
+.bear:hover #left-ear #right-ear  {
+  transform: translateY(-10px);
+}
+
+@keyframes wiggle {
+
+  0% {
+    transform: translateX(4em);
+  }
+
+  100% {
+    transform: translateX(-4em);
+  }
+
 }
